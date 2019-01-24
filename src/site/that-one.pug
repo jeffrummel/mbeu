@@ -1,0 +1,46 @@
+---
+layout: _destination.pug
+title: Example | That One
+subHed: Example | That One
+permalink: example/that-one.html
+---
+
+block content
+  header.dest__hed.hed
+    h1.hed__logo
+      span.hed__logo--text
+      svg.hed__logo--grfx
+    nav.hed__nav.nav
+      button#menu-toggle.nav__toggle
+        svg.nav__toggle--icon
+          rect(x='0' y='2' width='48' height='6' style='fill:rgb(0,0,0);')
+          rect(x='0' y='14' width='48' height='6' style='fill:rgb(0,0,0);')
+          rect(x='0' y='26' width='48' height='6' style='fill:rgb(0,0,0);')
+          | Click to open navigation menu
+
+      ul#menu.nav__primary
+        li.nav__primary--item
+          a.nav__primary--link This Option
+        li.nav__primary--item
+          a.nav__primary--link That Option
+        li.nav__primary--item
+          a.nav__primary--link The Other Option
+
+  section.dest__marq.marq
+    h2.marq__hed Ante luctus eget conubia litora
+    div.marq__dek
+      p.marq__dek--copy Tortor tellus quis cras vitae nunc facilisis augue himenaeos, malesuada vel curabitur orci aptent torquent at felis, montes cum proin consequat sem class venenatis. Facilisis rutrum magnis est integer libero pharetra eleifend himenaeos, imperdiet tempor aenean cubilia nascetur justo vehicula morbi, tristique litora taciti diam praesent felis fermentum.
+      a.marq__dek--link(href="#") Primary Action
+      a.marq__dek--link(href="#") Secondary Action
+
+  ul.kick
+    li.kick__item
+      picture.kick__item--grfx
+      h3.kick__item--hed diam scelerisque
+      p.kick__item--dek Lorem ipsum dolor sit amet consectetur adipiscing elit porta diam nibh proin eu montes dis, tincidunt dictum faucibus nisl scelerisque rutrum purus eros dapibus condimentum dui pellentesque.
+      a.kick__item--link(href="#") Take Action
+    li.kick__item
+      picture.kick__item--grfx
+      h3.kick__item--hed cubilia donec
+      p.kick__item--dek Mollis dignissim augue integer morbi pretium est interdum, sapien arcu ullamcorper euismod metus fames rhoncus, class pulvinar nam sagittis tellus a. Auctor sociis habitant torquent, malesuada semper.
+      a.kick__item--link(href="#") Take Action

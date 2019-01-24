@@ -1,0 +1,12 @@
+.dest {
+  align-items: center;
+  &__hed {
+    width:100%;
+    max-width: 1320px;
+  }
+  &__marq {
+    width:100%;
+    background:lightgray;
+  }
+  // @import "elements/longform";
+}

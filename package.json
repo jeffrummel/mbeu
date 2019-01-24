@@ -1,0 +1,21 @@
+{
+  "name": "mbeu",
+  "version": "1.0.0",
+  "description": "Documentation for the MBEu CSS methodology",
+  "main": "index.js",
+  "author": "Jeff Rummel",
+  "license": "MIT",
+  "private": true,
+  "devDependencies": {
+    "@11ty/eleventy": "^0.7.1",
+    "gulp": "^4.0.0",
+    "gulp-clean": "^0.4.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-sass": "^4.0.2",
+    "gulp-serve": "^1.4.0",
+    "gulp-shell": "^0.6.5",
+    "gulp-uglify-es": "^1.0.4",
+    "pump": "^3.0.0",
+    "require-dir": "^1.2.0"
+  }
+}

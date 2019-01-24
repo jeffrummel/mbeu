@@ -1,0 +1,45 @@
+.nav {
+  &__primary {  
+    display: flex;
+    align-items: center;
+    &--item {
+      flex:0 0 auto;
+      margin:0 12px;
+    }
+  }
+  &__toggle {
+    border:0;
+    background:transparent;
+  }
+  @media screen and (max-width:800px) {
+    &__primary {
+      position:absolute;
+      top:120px;
+      left:0;
+      right: 0;
+      bottom: auto;
+      max-height:0;
+      overflow:hidden;
+      flex-flow:column nowrap;
+      justify-content: flex-end;
+      transition: all 0.3s ease-out;
+      &.visible {
+        max-height:400px;
+      }
+    }
+    &__toggle {
+      box-sizing: content-box;
+      width:48px;
+      height:32px;  
+    }
+  }
+  @media screen and (min-width:800px) {
+    &__primary {
+      flex-flow:row nowrap;
+      justify-content: flex-end;  
+    }
+    &__toggle {
+      display:none;
+    }
+  }
+}

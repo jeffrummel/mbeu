@@ -1,0 +1,33 @@
+.cards {
+  width:100%;
+  max-width: 1320px;
+  margin:64px 0;
+  padding:12px;
+  text-align:center;
+  &__item {
+    min-height:188px;
+    display: flex;
+    flex-flow:column nowrap;
+    &--hed {}
+    &--copy {}
+    &--link {}
+    &--grfx {
+      display: block;
+      flex: 0 0 124px;
+      order:-1;
+      width:124px;
+      margin:12px auto;
+      background:gray;
+      border-radius: 50%;
+      border:2px solid lightgray;
+    }
+  }
+  @media screen and (max-width:800px) {
+  }
+  @media screen and (min-width:800px) {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap:4vw;
+  }
+
+}

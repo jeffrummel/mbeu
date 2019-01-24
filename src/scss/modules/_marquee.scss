@@ -1,0 +1,34 @@
+.marq {
+  box-sizing: border-box;
+  &--hed {
+    flex:0 0 auto;
+  }
+  &__dek {
+    display:flex;
+    flex-flow:row wrap;
+    justify-content: center;
+    align-items: center;
+    &--copy {}
+    &--link {
+      display:inline-block;
+      margin:12px;
+      padding:8px;
+      background:darkgrey;
+    }
+    &-grfx {}
+  }
+  @media screen and (max-width:800px) {
+    padding:64px 12px;
+  }
+  @media screen and (min-width:800px) {
+    display: flex;
+    flex-flow:column wrap;
+    justify-content: center;
+    align-items: center; 
+    height:68vh;
+    &__dek {
+      max-width:54%;
+      flex:0 0 auto;
+    } 
+  }
+}

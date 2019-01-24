@@ -1,0 +1,72 @@
+
+html {
+  font-family:'open sans', arial, sans-serif;
+  font-size:100%;
+  line-height:1.5em;
+  overflow-x:hidden;
+}
+body {
+  display:flex;
+  flex-flow:column nowrap;
+  justify-content: center;
+}
+em {
+  font-style:italic;
+}
+strong {
+  font-weight:bold;
+}
+h1,
+h3,
+h4,
+h5,
+h6 {
+  font-family:"Arthura-Bold", Helvetica, sans-serif;
+  letter-spacing:-0.5px;
+  line-height: 1.4;
+  color:rgb(48, 48, 73);
+}
+h1 {
+  font-size:44px;
+}
+h2 {
+  font-size:19px;
+  font-family:"Arthura-Black", Helvetica, sans-serif;
+  letter-spacing:-0.5px;
+  line-height: 1.4;
+  color:rgb(48, 48, 73);
+  @media screen and (min-width:1024px) {
+    font-size:27px;
+  }
+}
+h3 {
+  font-size:27px;
+  @media screen and (min-width:1024px) {
+    font-size:23px;
+  }
+}
+h4 {
+  font-size:19px;
+  @media screen and (min-width:1024px) {
+  }
+}
+h5 {
+  font-size:13px;
+  @media screen and (min-width:1024px) {
+  }
+}
+h6 {
+  font-size:9px;
+  @media screen and (min-width:1024px) {
+  }
+
+}
+p,
+li {
+  font-size:19px;
+  line-height: 1.4;
+  color:#5F5E91;
+}
+p {
+  margin:24px 0;
+ }

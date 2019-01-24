@@ -1,0 +1,296 @@
+/*// Based on (http://meyerweb.com/eric/tools/css/reset/) * http://cssreset.com*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  vertical-align: baseline; }
+
+/*// HTML5 display-role reset for older browsers*/
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+html {
+  font-family: 'open sans', arial, sans-serif;
+  font-size: 100%;
+  line-height: 1.5em;
+  overflow-x: hidden; }
+
+body {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center; }
+
+em {
+  font-style: italic; }
+
+strong {
+  font-weight: bold; }
+
+h1,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Arthura-Bold", Helvetica, sans-serif;
+  letter-spacing: -0.5px;
+  line-height: 1.4;
+  color: #303049; }
+
+h1 {
+  font-size: 44px; }
+
+h2 {
+  font-size: 19px;
+  font-family: "Arthura-Black", Helvetica, sans-serif;
+  letter-spacing: -0.5px;
+  line-height: 1.4;
+  color: #303049; }
+  @media screen and (min-width: 1024px) {
+    h2 {
+      font-size: 27px; } }
+
+h3 {
+  font-size: 27px; }
+  @media screen and (min-width: 1024px) {
+    h3 {
+      font-size: 23px; } }
+
+h4 {
+  font-size: 19px; }
+
+h5 {
+  font-size: 13px; }
+
+h6 {
+  font-size: 9px; }
+
+p,
+li {
+  font-size: 19px;
+  line-height: 1.4;
+  color: #5F5E91; }
+
+p {
+  margin: 24px 0; }
+
+.long__body {
+  flex: 0 0 auto;
+  min-width: 298px;
+  width: 60vw;
+  max-width: 688px;
+  align-self: center;
+  padding-top: 64px; }
+  .long__body ul {
+    list-style-type: disc; }
+  .long__body li {
+    margin: 6px 0 6px 24px; }
+  .long__body code {
+    background: rgba(245, 245, 253, 0.8);
+    border-radius: 4px;
+    padding: 3px;
+    font-size: 17px;
+    line-height: 1.6;
+    font-family: monospace;
+    color: #303049; }
+  .long__body pre {
+    overflow-y: scroll;
+    margin: 24px -11px;
+    padding: 12px 11px;
+    font-family: monospace;
+    color: #303049;
+    background: rgba(245, 245, 253, 0.8);
+    border: 2px solid rgba(215, 214, 250, 0.4);
+    border-radius: 4px; }
+    @media screen and (min-width: 1024px) {
+      .long__body pre {
+        margin: 24px -36px;
+        padding: 36px; } }
+
+.long__hed {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 39vh;
+  background: purple;
+  background-image: linear-gradient(122deg, #250642 0, #AC5CBF 32%, #C86DD7 45%, #8987D1, 97%, #0DB9C5 120%); }
+  @media screen and (min-width: 1024px) {
+    .long__hed {
+      flex: 0 0 60vh; } }
+  .long__hed--title {
+    color: white;
+    font-size: 22vw;
+    font-family: "Arthura-Black", Helvetica, sans-serif;
+    text-shadow: 0 0 19px rgba(37, 6, 76, 0.3); }
+    @media screen and (min-aspect-ratio: 8 / 7) {
+      .long__hed--title {
+        font-size: 15vh; } }
+  .long__hed--sub {
+    color: white;
+    font-size: 5vw;
+    font-family: "Arthura-Light", Helvetica, sans-serif;
+    font-style: italic;
+    letter-spacing: -0.5px;
+    text-shadow: 0 0 9px rgba(37, 6, 76, 0.4); }
+    @media screen and (min-aspect-ratio: 8 / 7) {
+      .long__hed--sub {
+        font-size: 3vh; } }
+
+.dest {
+  align-items: center; }
+  .dest__hed {
+    width: 100%;
+    max-width: 1320px; }
+  .dest__marq {
+    width: 100%;
+    background: lightgray; }
+
+.hed {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 12px; }
+  .hed__logo {
+    flex: 0 0 288px;
+    background: gray;
+    height: 96px; }
+  .hed__nav {
+    flex: 0 0 auto; }
+  @media screen and (min-width: 800px) {
+    .hed__nav {
+      flex: 1 0 auto; } }
+
+.nav__primary {
+  display: flex;
+  align-items: center; }
+  .nav__primary--item {
+    flex: 0 0 auto;
+    margin: 0 12px; }
+
+.nav__toggle {
+  border: 0;
+  background: transparent; }
+
+@media screen and (max-width: 800px) {
+  .nav__primary {
+    position: absolute;
+    top: 120px;
+    left: 0;
+    right: 0;
+    bottom: auto;
+    max-height: 0;
+    overflow: hidden;
+    flex-flow: column nowrap;
+    justify-content: flex-end;
+    transition: all 0.3s ease-out; }
+    .nav__primary.visible {
+      max-height: 400px; }
+  .nav__toggle {
+    box-sizing: content-box;
+    width: 48px;
+    height: 32px; } }
+
+@media screen and (min-width: 800px) {
+  .nav__primary {
+    flex-flow: row nowrap;
+    justify-content: flex-end; }
+  .nav__toggle {
+    display: none; } }
+
+.marq {
+  box-sizing: border-box; }
+  .marq--hed {
+    flex: 0 0 auto; }
+  .marq__dek {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center; }
+    .marq__dek--link {
+      display: inline-block;
+      margin: 12px;
+      padding: 8px;
+      background: darkgrey; }
+  @media screen and (max-width: 800px) {
+    .marq {
+      padding: 64px 12px; } }
+  @media screen and (min-width: 800px) {
+    .marq {
+      display: flex;
+      flex-flow: column wrap;
+      justify-content: center;
+      align-items: center;
+      height: 68vh; }
+      .marq__dek {
+        max-width: 54%;
+        flex: 0 0 auto; } }
+
+.cards {
+  width: 100%;
+  max-width: 1320px;
+  margin: 64px 0;
+  padding: 12px;
+  text-align: center; }
+  .cards__item {
+    min-height: 188px;
+    display: flex;
+    flex-flow: column nowrap; }
+    .cards__item--grfx {
+      display: block;
+      flex: 0 0 124px;
+      order: -1;
+      width: 124px;
+      margin: 12px auto;
+      background: gray;
+      border-radius: 50%;
+      border: 2px solid lightgray; }
+  @media screen and (min-width: 800px) {
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-column-gap: 4vw; } }
+
+.kick {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 12px; }
+  .kick__item--grfx {
+    display: block;
+    width: 100%;
+    height: 364px;
+    background: gray; }
+  @media screen and (min-width: 800px) {
+    .kick {
+      max-width: 1320px; }
+      .kick__item {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr auto 1fr;
+        grid-column-gap: 64px; }
+        .kick__item--hed {
+          max-width: 288px;
+          align-self: end; }
+        .kick__item--dek {
+          max-width: 574px; }
+        .kick__item--link {
+          max-width: 288px;
+          align-self: start; }
+        .kick__item:nth-of-type(odd) .kick__item--grfx {
+          grid-column: 2; }
+        .kick__item:nth-of-type(even) .kick__item--grfx {
+          grid-column: 1; }
+        .kick__item--grfx {
+          grid-row: 1 / span 3; } }
