@@ -72,15 +72,15 @@ When we actually go into styling the collection and card we can give the collect
 
 ```
 .coll {
-	display:flex;
-	flex-flow:row wrap;
-	justify-content:space-evenly;
-	align-items:center;
-	padding:1.2rem;
-	&__card {
-		flex:1 0 30%;
-		text-align:center;
-	}
+  display:flex;
+  flex-flow:row wrap;
+  justify-content:space-evenly;
+  align-items:center;
+  padding:1.2rem;
+  &__card {
+    flex:1 0 30%;
+    text-align:center;
+  }
 }
 ```
 
@@ -88,23 +88,23 @@ The above puts us in a good position to add in a new collection of self-containe
 
 ```
 .coll {
-	display:flex;
-	flex-flow:row wrap;
-	justify-content:space-evenly;
-	padding:1.2rem;
-	&__card {
-		align-self:center;
-		flex:1 0 30%;
-		text-align:center;
-	}
-	&__kick {
-		align-self:flex-start;
-		flex:0 0 50%;
-		text-align:left;
-		display:grid;
-		grid-template-columns:1fr 1fr;
-		grid-gap:.8rem;
-	}
+  display:flex;
+  flex-flow:row wrap;
+  justify-content:space-evenly;
+  padding:1.2rem;
+  &__card {
+    align-self:center;
+    flex:1 0 30%;
+    text-align:center;
+  }
+  &__kick {
+    align-self:flex-start;
+    flex:0 0 50%;
+    text-align:left;
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    grid-gap:.8rem;
+  }
 }
 ```
 
@@ -114,12 +114,12 @@ As the interface evolves and changes over time, you may find yourself out growin
 
 ```
 .card {
-	&__item {
-		&--hed {}
-		&--dek {}
-		&--grfx {}
-		&--link {}		
-	}
+  &__item {
+    &--hed {}
+    &--dek {}
+    &--grfx {}
+    &--link {}    
+  }
 }
 ```
 
@@ -127,15 +127,14 @@ As the interface evolves and changes over time, you may find yourself out growin
 
 ```
 .kick {
-	&__item {
-		&--hed {}
-		&--dek {}
-		&--grfx {}
-		&--link {}		
-	}
+  &__item {
+    &--hed {}
+    &--dek {}
+    &--grfx {}
+    &--link {}    
+  }
 }
 ```
-
 
 Working wireframes can be found [here](/example/this-one) and [here](/example/that-one), based on this [famous tweet](https://twitter.com/jongold/status/694591217523363840). 
 
