@@ -6,19 +6,19 @@ subHed: Module, Block, Element, (utility)
 
 ## A methodology for creating modular, maintainable styles that borrow from the best of component and utility-based approaches.
 
-MBE(u), pronounced: _imbue_, is a methodology for creating scalable and maintainable CSS consisting of (M)odule, (B)lock, (E)lament and (u)tility classes. If you are familiar with [BEM](//getbem.com) you will recognize the naming pattern of MBE(u). On the surface they are quite similar but looking deeper reveals two key differences. 
+MBE(u), pronounced: _imbue_, is a methodology for creating scalable and maintainable CSS consisting of (M)odule, (B)lock, (E)lament, and (u)tility classes. If you are familiar with [BEM](//getbem.com), you will recognize the naming pattern of MBE(u). On the surface, they are quite similar but looking deeper reveals two key differences. 
 
-The first difference is the addition of a module as the highest level parent. Adding the module as a parent item adds structure and context to blocks and elements, allowing blocks to be much more malleable to their parent modules creating an opportunity to write DRYer more reusable styles. 
+The first difference is the addition of a module as the highest-level parent. Adding the module as a parent item adds structure and context to blocks and elements, allowing blocks to be much more malleable than their parent modules, creating an opportunity to write DRYer more reusable styles. 
 
-MBE(u) also replaces the Modifier with the Utility. When reading BEM styles and markup, that things become convoluted quickly and there are many opportunities to create duplicate and conflicting styles on an HTML element. As the code is tweaked over time, this often results in more and more modifiers added to individual parts.
+MBE(u) also replaces the Modifier with the Utility. When reading BEM styles and markup, things become convoluted quickly, and there are many opportunities to create duplicate and conflicting styles on an HTML element. As the code is tweaked over time, more modifiers are often added to individual parts.
 
 ### Architecture
 
-The architecture is quite simple. A module can contain blocks, elements and other modules as direct descendants. Blocks can contain other blocks and elements as direct descendants. Elements can contain other elements as direct descendants. Utilities are reserved for changes to the DOM or outlier scenarios in design or hierarchy.
+The architecture is quite simple. A module can contain blocks, elements, and other modules as direct descendants. Blocks can contain other blocks and elements as direct descendants. Elements can contain other elements as direct descendants. Utilities are reserved for changes to the DOM or outlier scenarios in design or hierarchy.
 
-**‌(M)** Module level components will typically be a large container of blocks and elements and will declare the layout engine.
+**‌(M)** Module-level components will typically be a large container of blocks and elements and will declare the layout engine.
 
-**(B)** Block level components will be smaller in structure and often repeated collections of elements. 
+**(B)** Block-level components will be smaller in structure and often repeated collections of elements. 
 
 **(E)** Element level will define the content within the context of the block. 
 
@@ -26,12 +26,12 @@ The architecture is quite simple. A module can contain blocks, elements and othe
 
 ### Structure and Naming
 
-When considering the naming convention, each level should be named contextually within relation to its parent or parents, and when the names are descriptive, they need to be illustrative of the content/role/function, and not of appearance, so having a block or element named `.cta` (for Call To Action) would be good, but having one named `.red` or `column-3` would be bad.
+When considering the naming convention, each level should be named contextually in relation to its parent or parents. When the names are descriptive, they need to be illustrative of the content/role/function and not of appearance, so having a block or element named `.cta` (for Call To Action) would be good, but having one named `.red` or `column-3` would be bad.
 
 A few common names I rely on for modules and blocks when building marketing sites and landing pages:
 
-- Heading - `hed`: Generally reserved for the page heading and consisting of an h1 tag and a nav at a minimum.
-- Marquee - `marq`: Typically consists of a large graphic, attention-grabbing text and a call-to-action. 
+- Heading - `hed`: Generally reserved for the page or section heading, consisting of an h1 tag and a nav at a minimum.
+- Marquee - `marq`: Typically consists of a large graphic, attention-grabbing text, and a call-to-action. 
 - Longform - `long`: long-form article
 - Shortform - `short`: short-form article
 - Supplemental - `sup`: supplemental content can contain 
@@ -46,10 +46,10 @@ Block and element names are often recycled, relying on the context of the parent
 - Headline or heading - `hed` 
 - Subheadline - `sub`  
 - Deck - `dek`: phrase or sentence teasing the article. In web publishing, it is often casually referred to as a blurb or teaser  
-- Lede - `led`: in print Publishing - Leading paragraph  
-- Copy `copy`: generally text content that is or contains one or more paragraph.
-- Nut Graf - `nut`: in print publishing, this is a nutshell paragraph. 
-- Photo Caption - `cap`: the headline for photo 
+- Lede - `led`: in print Publishing - leading paragraph  
+- Copy `copy`: generally text content containing one or more paragraphs.
+- Nut Graf - `nut`: This is a nutshell paragraph in print publishing. 
+- Photo Caption - `cap`: the photo descriptor. 
 - Cutline - `cut`: description of a photo.
 - Graphic - `grfx`: Graphic or picture.
 - Hyperlink - `link`: typically an "a" tag.
@@ -58,7 +58,7 @@ Example wireframes can be found [here](/example/this-one) and [here](/example/th
 
 #### Modules and Blocks
 
-Modules and blocks should be named based upon the purpose they serve and not the content they hold or their appearance. The markup below shows cards each with a heading, deck, and a graphic. 
+Modules and blocks should be named based on the purpose they serve and not the content they hold or their appearance. The markup below shows cards, each with a heading, deck, and graphic. 
 
 ```
 <ul class="coll">
@@ -74,11 +74,11 @@ Modules and blocks should be named based upon the purpose they serve and not the
 </ul>
 ```
 
-This content agnostic name can hold products, news posts, authors, product features or any number of collections and the name, "cards" describes each `coll__card` as a self-contained content block that can be displayed in a grid, carousel, stack or randomly across the module.
+This content-agnostic name can hold products, news posts, authors, product features, or collections. The name "cards" describes each `coll__card` as a self-contained content block that can be displayed in a grid, carousel, stack, or randomly across the module.
 
 ##### Collection Module and Card Block - Example
 
-When we go into styling the collection and card we can give the collection just enough markup to be reusable with different types of collections.
+When we go into styling the collection and card, we can give the collection just enough markup to be reusable with different types of collections.
 
 ```
 .coll {
@@ -94,7 +94,7 @@ When we go into styling the collection and card we can give the collection just 
 }
 ```
 
-The above puts us in an excellent position to add in a new collection of self-contained content blocks that are used to kick the users deeper into the site.
+The above puts us in an excellent position to add a new collection of self-contained content blocks that are used to push the users deeper into the site.
 
 ```
 .coll {
@@ -161,8 +161,8 @@ Elements should share their naming convention across different blocks. You will 
 
 ## Philosophy
 
-MBE(u) attempts to create a cohesive naming and structure for the presentation layer, where the whole greater than the sum of its parts. The naming convention helps unite content creation, strategy, design, and delivery. Common component names based on the purpose of the content give strategists and creators context to each content field they are populating. These names then become available to the designers to inform how the eye will move through the page. The design files can translate easily to the content management architecture and to the code that is ultimately published on the site.
+MBE(u) attempts to create a cohesive naming and structure for the presentation layer, where the whole is greater than the sum of its parts. The naming convention helps unite content creation, strategy, design, and delivery. Common component names based on the purpose of the content give strategists and creators context to each content field they are populating. These names then become available to the designers to inform how the eye will move through the page. The design files can translate easily to the content management architecture and the code that is ultimately published on the site.
 
-The "__" and "--" separators established with BEM are the best I've seen. They're easy to read and interpret. MBE(u) adds a bit of hierarchy and context to that structure. The practice of naming based upon purpose gives us predictability, flexibility and a common language for the full content life-cycle.
+The "__" and "--" separators established with BEM are easy to read and interpret. MBE(u) adds a bit of hierarchy and context to that structure. The practice of naming based on purpose gives us predictability, flexibility, and a common language for the whole content life cycle.
 
-The MBE(u) methodology has been developed over years of learning, reading, and testing. It has been applied to small web-apps and websites of varying sizes. As with most things in this world MBE(u) works best on teams where there's trust, communication, clarity of scope and documentation.
+The MBE(u) methodology has been developed over years of learning, reading, and testing. It has been applied to small web apps and websites of varying sizes. As with most things, MBE(u) works best on teams with trust, communication, clarity of scope, and documentation.
